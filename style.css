@@ -1,0 +1,555 @@
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #ccc;
+    background-color: #222;
+    text-align: center;
+}
+
+
+/* Enhanced Header Styling */
+header {
+    background: linear-gradient(135deg, #333, #111); /* Gradient for depth */
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #f4a261;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #ccc;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+header nav {
+    margin-top: 30px;
+}
+
+header nav a {
+    color: #ccc;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    border-radius: 25px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #fff;
+    background-color: #f4a261; /* Subtle background change on hover */
+}
+
+/* Call to Action Button in Header */
+header .cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background-color: #f4a261;
+    color: #111;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+header .cta-button:hover {
+    background-color: #e76f51;
+}
+
+
+/* General styling for header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.header-content h1 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Hamburger menu styling */
+.hamburger {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+/* Responsive design for mobile view */
+@media (max-width: 768px) {
+    /* Hide navigation links by default and display hamburger icon */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background-color: #333;
+        padding: 10px;
+        border-radius: 8px;
+        width: 150px;
+    }
+
+    .nav-links a {
+        padding: 10px 0;
+        border-bottom: 1px solid #444;
+        text-align: center;
+    }
+
+    /* Show hamburger icon */
+    .hamburger {
+        display: block;
+    }
+
+    /* Show nav links when active */
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+
+
+
+
+
+/* Section Container */
+.section-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* About Section */
+#about {
+    background: #333; /* Dark grey background */
+    color: #ccc;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#about .section-container {
+    text-align: center;
+}
+
+.profile-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin: 10px 0;
+    border: 6px solid #444;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+p {
+    font-size: 18px;
+    color: #ccc;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.resume-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background-color: #f4a261;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.resume-link:hover {
+    background-color: #555;
+}
+
+/* Projects Section */
+#projects {
+    background: #222; /* Dark background */
+    padding: 60px 0;
+    color: #ccc;
+}
+
+#projects .section-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.project {
+    display: inline-block;
+    width: calc(50% - 40px); /* Two projects per row */
+    margin: 20px;
+    background: #333;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+.project h3 {
+    color: #fff;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.project ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.project li {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #ccc;
+}
+
+.project ul li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+/* Style for the "View Project" buttons */
+.project-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #f4a261; /* Change to your preferred color */
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.project-link:hover {
+    background-color: #757373; /* Darker shade for hover effect */
+}
+
+/* Responsive Layout for Projects */
+@media screen and (max-width: 768px) {
+    .project {
+        width: calc(100% - 40px); /* One project per row */
+    }
+}
+
+/* Skills Section */
+#skills {
+    background: #333; /* Dark grey background */
+    padding: 80px 20px;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skill {
+    background: #444; /* Slightly lighter grey */
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+.skill i {
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.skill h3 {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.skill p {
+    font-size: 16px;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.skill i.fab.fa-java:before {
+    content: "\f4e4"; /* Java icon from Font Awesome */
+}
+.skill i.fas.fa-database:before {
+    content: "\f1c0"; /* Database icon */
+}
+
+/* Contact Section */
+#contact {
+    background: #222; /* Dark grey background */
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.contact-info {
+    margin-bottom: 50px;
+    font-size: 18px;
+    color: #ccc;
+}
+
+.contact-info p {
+    font-size: 16px;
+    color: #ccc;
+    margin: 5px 0;
+}
+
+.contact-info a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #f4a261;
+    text-decoration: underline;
+}
+
+.contact-form {
+    background: #333;
+    padding: 35px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form h3 {
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: 26px;
+}
+
+.contact-form label {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #ccc;
+    background: #222;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+.contact-form button {
+    background-color: #f4a261;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
+
+/* Enhanced Footer Styling */
+footer {
+    background: linear-gradient(135deg, #111, #333);
+    color: #ccc;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 0.9rem;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.5);
+}
+
+footer p {
+    margin: 10px 0;
+    color: white;
+}
+
+footer p a {
+    color: #f4a261;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+footer p a:hover {
+    color: #e76f51;
+}
+
+footer .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+footer .footer-links a {
+    color: #888;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer .footer-links a:hover {
+    color: #f4a261;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    /* Projects Section */
+    .project {
+        width: calc(100% - 40px); /* One project per row */
+    }
+
+    /* Contact Section */
+    .contact-info {
+        font-size: 16px;
+    }
+
+    .contact-form h3 {
+        font-size: 22px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 14px;
+    }
+}
+
+
+
+/* Certifications Section */
+#certifications {
+    background: #222; /* Dark background similar to the skills section */
+    padding: 80px 20px;
+}
+
+
+
+.certification:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+.certification i {
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.certification h3 {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.certification p {
+    font-size: 16px;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+/* Certifications Section */
+#certifications {
+    background: #222; /* Dark grey background */
+    padding: 60px 20px;
+}
+
+.certifications-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 800px; /* Decrease the max-width */
+    margin: 0 auto;
+    padding: 0 10px; /* Adjust padding to control spacing */
+}
+
+.certification {
+    background: #333; /* Slightly lighter grey */
+    border-radius: 8px;
+    padding: 20px; /* Adjust padding inside each certification card */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.certification h3 {
+    font-size: 18px;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
